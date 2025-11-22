@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato – Desbravador de Fronteiras</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Contato</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="mentoria.html">Mentoria</a>
+        <a href="palestras.html">Palestras</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html" class="active">Contato</a>
+    </nav>
+</header>
+
+<section class="hero interno">
+    <h2>Fale diretamente comigo</h2>
+    <p>Use um dos canais abaixo para solicitar mentoria, palestras ou orientações.</p>
+</section>
+
+<section class="conteudo">
+
+    <h2>Whatsapp</h2>
+    <p>Para falar de forma rápida e direta, clique no link abaixo:</p>
+    <p>
+        <a class="botao" href="https://wa.me/5592981068427" target="_blank">
+            👉 Enviar mensagem no WhatsApp
+        </a>
+    </p>
+
+    <h2>E-mail</h2>
+    <p>Se preferir contato por e-mail:</p>
+    <p><strong>eliasbgomes@gmail.com</strong></p>
+
+    <h2>Redes sociais</h2>
+    <ul>
+        <li>Instagram: <a href="https://instagram.com/eliasbgomes" target="_blank">@eliasbgomes</a></li>
+        <li>YouTube: Em breve</li>
+        <li>Facebook: Em breve</li>
+    </ul>
+
+</section>
+
+<footer>
+    <p>© 2025 – Desbravador de Fronteiras | Elias Gomes</p>
+</footer>
+
+</body>
+</html>
