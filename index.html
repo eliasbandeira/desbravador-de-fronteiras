@@ -3,243 +3,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elias Bandeira — Mente, Narrativa e Presença</title>
-
-  <style>
-    :root {
-      --black: #0d0d12;
-      --deep-blue: #1a2dff;
-      --purple: #7a4cff;
-      --silver: #c9ceda;
-      --bg: #f7f8fb;
-      --text: #111;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    header {
-      background: var(--black);
-      color: white;
-      padding: 20px 0;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .brand {
-      color: white;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    nav a {
-      color: #ffffffd9;
-      text-decoration: none;
-      font-weight: 600;
-      margin-left: 18px;
-      transition: 0.2s;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    .hero {
-      padding: 80px 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin: 0 0 16px;
-      color: var(--black);
-    }
-
-    .hero p {
-      color: #444;
-      font-size: 18px;
-    }
-
-    .hero-image {
-      width: 100%;
-      height: 380px;
-      background: linear-gradient(135deg, var(--purple), var(--deep-blue));
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 22px;
-      font-weight: 700;
-    }
-
-    section {
-      margin: 80px 0;
-    }
-
-    h2.section-title {
-      font-size: 30px;
-      margin-bottom: 14px;
-      color: var(--black);
-    }
-
-    .section-desc {
-      color: #555;
-      margin-bottom: 30px;
-      max-width: 720px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-
-    .card {
-      background: white;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 22px;
-      font-weight: 700;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 16px;
-    }
-
-    .btn-primary {
-      background: var(--deep-blue);
-      color: white;
-    }
-
-    footer {
-      background: var(--black);
-      color: #cfcfcf;
-      padding: 40px 0;
-      text-align: center;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .grid-2 {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-image {
-        height: 260px;
-      }
-    }
-  </style>
+  <title>Desbravador de Fronteiras — Elias Bandeira</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <div class="container">
-    <nav>
-      <div class="brand">Elias Bandeira</div>
-      <div>
-        <a href="index.html">Início</a>
-        <a href="mentoria.html">Mentoria</a>
-        <a href="curso.html">Curso</a>
-        <a href="palestras.html">Palestras</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-      </div>
+  <div class="header-inner">
+    <div class="brand">Desbravador de Fronteiras</div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="comunicacao.html">Comunicação</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="mentoria.html">Mentoria</a>
+      <a href="palestras.html">Palestras</a>
+      <a href="contato.html">Contato</a>
     </nav>
   </div>
 </header>
 
-<main class="container">
+<!-- HERO: imagem temporária (trocar por vídeo no futuro) -->
+<section class="hero">
+  <div class="hero-media">
+    <!-- imagem temporária (subir em /img/hero-temp.jpg) -->
+    <img src="img/hero-temp.jpg" alt="Hero — Desbravador de Fronteiras">
+    <!-- quando tiver vídeo, substitua o <img> por:
+    <video autoplay muted loop>
+      <source src="video/hero.mp4" type="video/mp4">
+    </video>
+    -->
+  </div>
+  <div class="hero-overlay"></div>
 
-  <section class="hero">
-    <div>
-      <h1>Mente, Narrativa e Presença</h1>
-      <p>
-        Comunicação não é só técnica.  
-        É atravessar fronteiras internas, integrar história, corpo e verdade.  
-        Aqui começa sua próxima voz.
-      </p>
+  <div class="container hero-inner">
+    <h1>Desbravador de Fronteiras</h1>
+    <p>Da Amazônia profunda à África — das travessias do seringal à frente das câmeras. Atravesso fronteiras externas e internas para transformar histórias em presença, voz e significado.</p>
+    <a class="btn" href="cursos.html">Ver Cursos</a>
+  </div>
+</section>
 
-      <a href="mentoria.html" class="btn btn-primary">Conheça a Mentoria</a>
+<section class="container">
+  <h2 class="section-title">O que eu faço</h2>
+  <p class="section-desc">Palestras, cursos e mentorias que unem experiência de campo, produção audiovisual e conhecimento em psicologia.</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Comunicação — TV & Rádio</h3>
+      <p>Produção, apresentação e reportagens no interior do Amazonas. Portfólio com vídeos e entrevistas.</p>
+      <a class="btn" href="comunicacao.html">Ver portfólio</a>
     </div>
-
-    <div class="hero-image">
-      Espaço para sua foto ou arte
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">O que você encontra aqui</h2>
-    <p class="section-desc">A união entre psicologia, comunicação e presença — aplicada à vida, à liderança e à câmera.</p>
-
-    <div class="grid-2">
-      <div class="card">
-        <h3>Mentoria — A Travessia</h3>
-        <p>Uma jornada profunda que integra mente, narrativa e presença. Ideal para quem quer desbloquear expressão verdadeira.</p>
-        <a href="mentoria.html" class="btn btn-primary">Explorar</a>
-      </div>
-
-      <div class="card">
-        <h3>Curso Mente em Cena</h3>
-        <p>Técnicas, prática e psicologia aplicadas à comunicação diante da câmera.</p>
-        <a href="curso.html" class="btn btn-primary">Ver Conteúdo</a>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">Palestras e Treinamentos</h2>
-    <p class="section-desc">Programas presenciais e online sobre comunicação, inconsciente e presença.</p>
 
     <div class="card">
-      <p>Treinamentos corporativos e palestras para empresas, escolas, igrejas e instituições.</p>
-      <a href="palestras.html" class="btn btn-primary">Saiba Mais</a>
+      <h3>Mente em Cena — Curso</h3>
+      <p>Curso prático para quem quer comunicar com presença diante da câmera e do público.</p>
+      <a class="btn" href="cursos.html">Ver curso</a>
     </div>
-  </section>
+  </div>
+</section>
 
-</main>
+<section class="container">
+  <h2 class="section-title">Vídeos & Trechos</h2>
+  <p class="section-desc">Seleção de clipes das viagens e trechos de palestras.</p>
+
+  <div class="video-grid">
+    <div class="video-thumb"><img src="img/thumb1.jpg" alt=""></div>
+    <div class="video-thumb"><img src="img/thumb2.jpg" alt=""></div>
+    <div class="video-thumb"><img src="img/thumb3.jpg" alt=""></div>
+  </div>
+</section>
 
 <footer>
-  © <span id="year"></span> Elias Bandeira — Presença, Narrativa e Consciência.
+  <div class="container">
+    <p class="small">© <span id="year"></span> Elias Bandeira — Desbravador de Fronteiras</p>
+  </div>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-
