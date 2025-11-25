@@ -1,0 +1,86 @@
+/* =============================
+   DESBRAVADOR DE FRONTEIRAS
+   style.css — Paleta: Amazônia / Documentário
+   ============================= */
+
+:root{
+  --bg:#071014;
+  --card:#0f1619;
+  --muted:#9aa6ad;
+  --text:#e7eef2;
+  --accent:#1fb67a;   /* verde expedição */
+  --gold:#dca66a;     /* dourado documentário */
+  --overlay: rgba(2,6,8,0.55);
+  --maxw:1100px;
+  --radius:12px;
+  --glass: rgba(255,255,255,0.03);
+  --transition: 220ms;
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* HEADER */
+header{
+  position:fixed;inset:0 0 auto 0;height:68px;background:linear-gradient(180deg,rgba(0,0,0,0.55),rgba(0,0,0,0.35));backdrop-filter: blur(6px);z-index:60;border-bottom:1px solid rgba(255,255,255,0.02)
+}
+.header-inner{max-width:var(--maxw);margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+.brand{font-weight:700;color:var(--gold);letter-spacing:1px;font-size:1.05rem}
+.nav{display:flex;gap:20px;align-items:center}
+.nav a{color:var(--text);text-decoration:none;font-weight:600;opacity:0.95}
+.nav a:hover{color:var(--accent);transform:translateY(-2px);transition:var(--transition)}
+
+/* HERO (imagem temporária / preparado para vídeo) */
+.hero{
+  position:relative;display:flex;align-items:center;min-height:86vh;padding:0 20px;margin-top:68px;overflow:hidden
+}
+.hero-media{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.6)}
+.hero-overlay{position:absolute;inset:0;background:var(--overlay);z-index:1}
+.hero-inner{position:relative;z-index:2;max-width:760px;padding:48px 24px;border-radius:10px;background:linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.02));backdrop-filter: blur(2px)}
+.hero h1{font-size:2.6rem;color:var(--gold);line-height:1.05;margin-bottom:14px}
+.hero p{color:var(--text);opacity:0.95;font-size:1.05rem;margin-bottom:22px}
+.hero .btn{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--accent);color:#001010;font-weight:700;text-decoration:none}
+
+/* SECTIONS */
+section{padding:64px 0}
+.section-title{font-size:1.6rem;color:var(--gold);margin-bottom:10px}
+.section-desc{color:var(--muted);margin-bottom:22px;max-width:720px}
+
+/* GRID */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,0.02);padding:22px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(0,0,0,0.4)}
+.card h3{color:var(--accent);margin-bottom:10px}
+.card p{color:var(--muted);font-size:0.98rem}
+
+/* VIDEO GALLERY (miniaturas) */
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.video-thumb{background:#000;border-radius:8px;overflow:hidden;position:relative;padding-top:56.25%}
+.video-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* FOOTER */
+footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
+.small{font-size:0.9rem;color:var(--muted)}
+
+/* FORM */
+.form{display:flex;flex-direction:column;gap:10px}
+.input,textarea{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:12px;border-radius:8px;color:var(--text);outline:none}
+textarea{min-height:120px;resize:vertical}
+
+/* RESPONSIVO */
+@media (max-width:900px){
+  .grid-2{grid-template-columns:1fr}
+  .video-grid{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:2rem}
+  .hero p{font-size:1rem}
+}
+@media (max-width:520px){
+  .nav{display:none}
+  .hero-inner{padding:20px}
+  .video-grid{grid-template-columns:1fr}
+  .hero{min-height:60vh}
+  .hero h1{font-size:1.5rem}
+}
