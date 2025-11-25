@@ -1,56 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palestras — Elias Gomes</title>
-    <style>
-        body { margin: 0; background: #0a0a0a; color: #e3e3e3; font-family: Arial, sans-serif; }
-        header { padding: 25px; text-align: center; background: #111; border-bottom: 1px solid #222; }
-        nav a { margin: 0 12px; color: #ccc; text-decoration: none; text-transform: uppercase; font-size: 0.85rem; }
-        nav a:hover { color: #fff; }
-        section { max-width: 850px; margin: auto; padding: 50px 20px; }
-        footer { margin-top: 80px; padding: 25px; text-align: center; color: #888; border-top: 1px solid #222; font-size: 0.8rem; }
-        .cta a { display: inline-block; margin-top: 25px; padding: 14px 28px; background: #fff; color: #000; text-decoration: none; border-radius: 6px; }
-        .cta a:hover { background: #d3d3d3; }
-    </style>
-</head>
-
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Palestras</title><link rel="stylesheet" href="style.css"></head>
 <body>
+<header class="header-inner"><div class="brand">Desbravador de Fronteiras</div><nav class="nav"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="comunicacao.html">Comunicação</a><a href="cursos.html">Cursos</a><a href="mentoria.html">Mentoria</a><a href="contato.html">Contato</a></nav></header>
 
-<header>
-    <h1>Palestras</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="mentoria.html">Mentoria</a>
-        <a href="curso.html">Curso</a>
-        <a href="palestras.html">Palestras</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
+<main class="container" style="padding-top:90px">
+  <section>
+    <h2 class="section-title">Palestras & Treinamentos</h2>
+    <p class="section-desc">Temas adaptáveis para empresas, organizações e eventos.</p>
 
-<section>
-    <h2>Palestras para Líderes, Igrejas e Empresas</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Entre Rios e Almas</h3>
+        <p>Travessia humana e tomada de decisão.</p>
+      </div>
 
-    <p>
-        Palestras impactantes que unem psicologia profunda, espiritualidade madura e 
-        análise do inconsciente para transformar equipes, ministérios e lideranças.
-    </p>
-
-    <p>
-        Temas que abordam propósito, cura emocional, identidade, tomada de decisão e 
-        desbloqueio de potenciais invisíveis.
-    </p>
-
-    <div class="cta">
-        <a href="contato.html">Solicitar palestra</a>
+      <div class="card">
+        <h3>Fronteiras Invisíveis</h3>
+        <p>Mecanismos inconscientes que moldam comportamentos.</p>
+      </div>
     </div>
-</section>
+  </section>
+</main>
 
-<footer>
-    © 2025 Elias Gomes — Desenvolvimento Humano & Liderança
-</footer>
-
+<footer><div class="container"><p class="small">© <span id="year"></span> Elias Bandeira</p></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
