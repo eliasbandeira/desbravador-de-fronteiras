@@ -1,62 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentoria – Desbravador de Fronteiras</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Mentoria — Mente em Cena</title><link rel="stylesheet" href="style.css"></head>
 <body>
+<header class="header-inner"><div class="brand">Desbravador de Fronteiras</div><nav class="nav"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="comunicacao.html">Comunicação</a><a href="cursos.html">Cursos</a><a href="palestras.html">Palestras</a><a href="contato.html">Contato</a></nav></header>
 
-<header>
-    <h1>Mentoria Individual</h1>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="mentoria.html" class="active">Mentoria</a>
-        <a href="palestras.html">Palestras</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-</header>
+<main class="container" style="padding-top:90px">
+  <section>
+    <h2 class="section-title">Mentoria — A Travessia</h2>
+    <p class="section-desc">Programa vivencial para integrar presença, narrativa e história pessoal.</p>
 
-<section class="hero interno">
-    <h2>A transformação começa dentro</h2>
-    <p>Para quem deseja romper ciclos, superar bloqueios emocionais e despertar seu potencial oculto.</p>
-</section>
+    <div class="card">
+      <h3>Formato</h3>
+      <p>Grupos pequenos e encontros individuais; exercícios práticos; apresentação final.</p>
+      <a class="btn" href="contato.html">Quero Participar</a>
+    </div>
+  </section>
+</main>
 
-<section class="conteudo">
-    <h2>Como funciona a mentoria?</h2>
-    <p>A mentoria “Desbravador de Fronteiras” é um processo profundo, baseado em autoconhecimento, psicologia, inconsciente e desenvolvimento humano. Você será guiado(a) por uma jornada estruturada em três pilares:</p>
-
-    <ul>
-        <li><strong>1. Despertar:</strong> Identificação dos bloqueios inconscientes e padrões repetitivos.</li>
-        <li><strong>2. Reconstrução:</strong> Revisão emocional, ressignificação e clareza de propósito.</li>
-        <li><strong>3. Expansão:</strong> Construção de novas estratégias para sua vida pessoal, profissional e espiritual.</li>
-    </ul>
-
-    <h2>Para quem é?</h2>
-    <ul>
-        <li>Empresários e líderes que desejam evoluir emocionalmente</li>
-        <li>Pessoas em crise, recomeço ou transição</li>
-        <li>Líderes religiosos que buscam autoconhecimento profundo</li>
-        <li>Quem sente que “algo o bloqueia” mas não sabe o que é</li>
-    </ul>
-
-    <h2>Resultados esperados</h2>
-    <ul>
-        <li>Consciência emocional ampliada</li>
-        <li>Melhoria imediata na clareza mental</li>
-        <li>Quebra de padrões inconscientes</li>
-        <li>Postura mais segura na vida e liderança</li>
-    </ul>
-
-    <a class="btn" href="contato.html">Quero iniciar minha mentoria</a>
-</section>
-
-<footer>
-    <p>© 2025 – Desbravador de Fronteiras | Elias Gomes</p>
-</footer>
-
+<footer><div class="container"><p class="small">© <span id="year"></span> Elias Bandeira</p></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
