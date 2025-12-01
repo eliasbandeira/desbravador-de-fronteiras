@@ -1,29 +1,60 @@
 <!doctype html>
 <html lang="pt-BR">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contato</title><link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="utf-8">
+  <title>Contato — Desbravador de Fronteiras</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-<header class="header-inner"><div class="brand">Desbravador de Fronteiras</div><nav class="nav"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="comunicacao.html">Comunicação</a><a href="cursos.html">Cursos</a><a href="mentoria.html">Mentoria</a><a href="palestras.html">Palestras</a></nav></header>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <h1 class="brand">Desbravador de Fronteiras</h1>
+        <div class="tagline">Elias Bandeira — comunicação que atravessa fronteiras</div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="palestras.html">Palestras</a>
+        <a href="mentoria.html">Mentoria</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html" class="cta">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-<main class="container" style="padding-top:90px">
-  <section>
+  <main class="container">
     <h2 class="section-title">Contato</h2>
-    <p class="section-desc">Propostas de palestras, cursos, mentorias ou parcerias — escreva abaixo.</p>
 
     <div class="card">
-      <form class="form" action="#" method="post">
-        <input class="input" name="nome" placeholder="Seu nome" required>
-        <input class="input" name="email" placeholder="Seu e-mail" required>
-        <input class="input" name="assunto" placeholder="Assunto">
-        <textarea name="mensagem" placeholder="Mensagem"></textarea>
-        <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+      <p>Preencha o formulário ou use os contatos diretos.</p>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" style="margin-top:12px">
+        <label>Nome
+          <input type="text" name="name" required>
+        </label>
+        <label>E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>Assunto
+          <input type="text" name="subject">
+        </label>
+        <label>Mensagem
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar mensagem</button>
       </form>
 
-      <p style="margin-top:12px;color:var(--muted)">Ou envie e-mail para: <strong>contato@seudominio.com</strong></p>
+      <div style="margin-top:12px" class="small">
+        <p><strong>Email:</strong> contato@desbravadordefronteiras.com</p>
+        <p><strong>WhatsApp:</strong> +55 92 9xxxx-xxxx (substitua pelo seu número)</p>
+      </div>
     </div>
-  </section>
-</main>
+  </main>
 
-<footer><div class="container"><p class="small">© <span id="year"></span> Elias Bandeira</p></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <footer class="site-footer"><div class="container">&copy; <span id="yr5"></span> Desbravador de Fronteiras — Elias Bandeira</div></footer>
+<script>document.getElementById('yr5').textContent = new Date().getFullYear();</script>
 </body>
 </html>

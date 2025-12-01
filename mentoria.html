@@ -1,265 +1,47 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mentoria — A Travessia | Elias Bandeira</title>
-
-  <style>
-    :root {
-      --black: #0d0d12;
-      --deep-blue: #1a2dff;
-      --purple: #7a4cff;
-      --silver: #c9ceda;
-      --bg: #f7f8fb;
-      --text: #111;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    header {
-      background: var(--black);
-      color: white;
-      padding: 20px 0;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .brand {
-      color: white;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    nav a {
-      color: #ffffffd9;
-      text-decoration: none;
-      font-weight: 600;
-      margin-left: 18px;
-      transition: 0.2s;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    section {
-      margin: 80px 0;
-    }
-
-    h1, h2, h3 {
-      color: var(--black);
-    }
-
-    h1 {
-      font-size: 44px;
-      margin-bottom: 20px;
-    }
-
-    h2.section-title {
-      font-size: 30px;
-      margin-bottom: 14px;
-    }
-
-    .section-desc {
-      color: #555;
-      margin-bottom: 30px;
-      max-width: 720px;
-    }
-
-    .hero {
-      padding: 80px 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero-image {
-      width: 100%;
-      height: 380px;
-      background: linear-gradient(135deg, var(--purple), var(--deep-blue));
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 22px;
-      font-weight: 700;
-    }
-
-    .card {
-      background: white;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.06);
-      margin-bottom: 24px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 22px;
-      font-weight: 700;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 16px;
-    }
-
-    .btn-primary {
-      background: var(--deep-blue);
-      color: white;
-    }
-
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-image {
-        height: 260px;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <title>Mentoria — Desbravador de Fronteiras</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<header>
-  <div class="container">
-    <nav>
-      <div class="brand">Elias Bandeira</div>
+  <header class="site-header">
+    <div class="header-inner">
       <div>
-        <a href="index.html">Início</a>
-        <a href="mentoria.html">Mentoria</a>
-        <a href="curso.html">Curso</a>
-        <a href="palestras.html">Palestras</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
+        <h1 class="brand">Desbravador de Fronteiras</h1>
+        <div class="tagline">Elias Bandeira — comunicação que atravessa fronteiras</div>
       </div>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <h1>A Travessia — Mentoria Individual</h1>
-      <p class="section-desc">
-        Uma jornada profunda para quem sente que sua voz, sua presença e sua história
-        não estão alinhadas.  
-        A Travessia é para quem deseja desbloquear expressão,
-        integrar o que sente com o que comunica e encontrar a própria voz —
-        diante das pessoas, da câmera e da vida.
-      </p>
-
-      <a href="contato.html" class="btn btn-primary">Quero saber mais</a>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="palestras.html">Palestras</a>
+        <a href="mentoria.html">Mentoria</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contato.html" class="cta">Contato</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="hero-image">
-      Espaço para sua foto ou arte
-    </div>
-  </section>
-
-  <!-- PARA QUEM É -->
-  <section>
-    <h2 class="section-title">Para quem é?</h2>
-    <p class="section-desc">
-      Para pessoas que sentem que existe algo dentro delas pedindo para ser dito,
-      mas que ainda não encontraram o caminho para expressar isso com verdade.
-    </p>
+  <main class="container">
+    <h2 class="section-title">Mentoria individual e para equipes</h2>
 
     <div class="card">
+      <p>A mentoria mescla psicologia, comunicação estratégica e prática de campo para desbloquear potencial de liderança. Programas personalizados com diagnóstico, plano e acompanhamento.</p>
+      <h3>Formato</h3>
       <ul>
-        <li>Quem trava ao se expor, falar em público ou gravar vídeos.</li>
-        <li>Quem carrega histórias que nunca foram organizadas ou nomeadas.</li>
-        <li>Quem sente que a voz não representa quem realmente é.</li>
-        <li>Líderes, comunicadores, criadores e profissionais que precisam aparecer com consistência.</li>
-        <li>Pessoas em processo de transição, reconstrução ou reinvenção pessoal.</li>
+        <li>Diagnóstico inicial e plano de ação</li>
+        <li>Encontros quinzenais ou mensais</li>
+        <li>Material prático e avaliação contínua</li>
       </ul>
     </div>
-  </section>
 
-  <!-- O PROCESSO -->
-  <section>
-    <h2 class="section-title">Como funciona o processo?</h2>
+    <p style="margin-top:14px"><a href="contato.html" class="btn">Solicitar mentoria</a></p>
+  </main>
 
-    <div class="card">
-      <h3>Encontro inicial</h3>
-      <p>
-        Uma conversa profunda onde mapeamos suas dores, travas, repetições,
-        padrões e o ponto real onde está o bloqueio da expressão.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Roteiro emocional</h3>
-      <p>
-        Vamos construir a linha que conecta sua história, seus acontecimentos
-        e seu modo único de ver o mundo — a base da expressão verdadeira.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Integração corpo–voz–mente</h3>
-      <p>
-        Exercícios de presença, respiração, verdade emocional e espontaneidade.
-        Aqui você começa a sentir sua voz “encaixar”.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Mensagem final</h3>
-      <p>
-        Ao final, você terá uma mensagem clara, autêntica e alinhada — pronta para ser dita
-        diante de pessoas ou de uma câmera.
-      </p>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section style="text-align: center; margin-top: 100px;">
-    <h2 class="section-title">Pronto para atravessar?</h2>
-    <p class="section-desc" style="text-align: center;">
-      Entre em contato para saber valores, agenda e disponibilidade.
-    </p>
-
-    <a href="contato.html" class="btn btn-primary" style="font-size: 18px;">
-      Quero fazer parte da mentoria
-    </a>
-  </section>
-
-</main>
-
-<footer>
-  © <span id="year"></span> Elias Bandeira — Presença, Narrativa e Consciência.
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  <footer class="site-footer"><div class="container">&copy; <span id="yr4"></span> Desbravador de Fronteiras — Elias Bandeira</div></footer>
+<script>document.getElementById('yr4').textContent = new Date().getFullYear();</script>
 </body>
 </html>

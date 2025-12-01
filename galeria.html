@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Galeria — Desbravador de Fronteiras</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header style="background:linear-gradient(135deg,#003d99,#0066cc);color:#fff;padding:16px 20px">
+    <div style="display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:auto">
+      <div>
+        <h1 style="margin:0">Desbravador de Fronteiras</h1>
+        <div style="font-size:13px;color:#cfe2ff">Galeria — Elias Bandeira</div>
+      </div>
+      <nav>
+        <a href="index.html" style="color:#fff;margin-left:16px;text-decoration:none">Início</a>
+        <a href="sobre.html" style="color:#fff;margin-left:16px;text-decoration:none">Sobre</a>
+        <a href="cursos.html" style="color:#fff;margin-left:16px;text-decoration:none">Cursos</a>
+        <a href="palestras.html" style="color:#fff;margin-left:16px;text-decoration:none">Palestras</a>
+        <a href="mentoria.html" style="color:#fff;margin-left:16px;text-decoration:none">Mentoria</a>
+        <a href="contato.html" style="color:#fff;margin-left:16px;text-decoration:none">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top:30px;">
+    <h2 class="section-title">Galeria — Fotos e Vídeos</h2>
+
+    <div class="gallery-filters" style="margin-bottom:20px;">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="photo">Fotos</button>
+      <button class="filter-btn" data-filter="video">Vídeos</button>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- FOTO -->
+      <div class="gallery-item photo" data-kind="photo" data-title="Entrevista ribeirinha" data-description="Entrevista com líder local no Amazonas" data-full="img/foto1-full.svg">
+        <img src="img/foto1-thumb.svg" alt="Entrevista ribeirinha">
+        <div class="label">FOTO</div>
+      </div>
+
+      <!-- YOUTUBE -->
+      <div class="gallery-item video" data-kind="video" data-video-type="youtube" data-video-id="dQw4w9WgXcQ" data-title="Trecho reportagem" data-description="Trecho de reportagem sobre liderança comunitária">
+        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Vídeo YouTube">
+        <div class="label">VÍDEO</div>
+      </div>
+
+      <!-- VÍDEO LOCAL -->
+      <div class="gallery-item video" data-kind="video" data-video-type="local" data-video-src="videos/sample-video.mp4" data-title="Oficina em Moçambique" data-description="Trechos da oficina com jovens em Moçambique">
+        <img src="img/video1-thumb.svg" alt="Oficina em Moçambique">
+        <div class="label">VÍDEO</div>
+      </div>
+
+      <!-- Adicione mais itens seguindo o padrão acima -->
+
+    </div>
+  </main>
+
+  <div id="lightbox-backdrop" class="lightbox-backdrop" aria-hidden="true">
+    <div class="lightbox" role="dialog" aria-modal="true">
+      <div class="lightbox-inner">
+        <div class="lightbox-media" id="lightbox-media"></div>
+        <div class="lightbox-meta">
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-desc"></p>
+        </div>
+        <button id="lightbox-close" class="lightbox-close">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>

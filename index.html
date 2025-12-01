@@ -1,84 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Desbravador de Fronteiras — Elias Bandeira</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbravador de Fronteiras – Elias Bandeira</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="header-inner">
-    <div class="brand">Desbravador de Fronteiras</div>
-    <nav class="nav">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="comunicacao.html">Comunicação</a>
-      <a href="cursos.html">Cursos</a>
-      <a href="mentoria.html">Mentoria</a>
-      <a href="palestras.html">Palestras</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-  </div>
-</header>
+    <!-- Navegação -->
+    <header class="topo">
+        <div class="logo">Desbravador de Fronteiras</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="palestras.html">Palestras</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="mentoria.html">Mentoria</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
 
-<!-- HERO: imagem temporária (trocar por vídeo no futuro) -->
-<section class="hero">
-  <div class="hero-media">
-    <!-- imagem temporária (subir em /img/hero-temp.jpg) -->
-    <img src="img/hero-temp.jpg" alt="Hero — Desbravador de Fronteiras">
-    <!-- quando tiver vídeo, substitua o <img> por:
-    <video autoplay muted loop>
-      <source src="video/hero.mp4" type="video/mp4">
-    </video>
-    -->
-  </div>
-  <div class="hero-overlay"></div>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Elias Bandeira</h1>
+        <h2>Psicólogo. Comunicador. Explorador de Fronteiras Humanas.</h2>
+        <p>
+            Da Amazônia profunda ao continente africano, dos estúdios de TV às aldeias ribeirinhas — uma jornada real,
+            intensa e transformadora. Agora convertida em palestras, cursos e mentorias que despertam líderes,
+            ampliam consciências e provocam mudanças profundas.
+        </p>
 
-  <div class="container hero-inner">
-    <h1>Desbravador de Fronteiras</h1>
-    <p>Da Amazônia profunda à África — das travessias do seringal à frente das câmeras. Atravesso fronteiras externas e internas para transformar histórias em presença, voz e significado.</p>
-    <a class="btn" href="cursos.html">Ver Cursos</a>
-  </div>
-</section>
+        <a href="contato.html" class="botao-cta">Contratar para Palestras</a>
+    </section>
 
-<section class="container">
-  <h2 class="section-title">O que eu faço</h2>
-  <p class="section-desc">Palestras, cursos e mentorias que unem experiência de campo, produção audiovisual e conhecimento em psicologia.</p>
+    <!-- Sobre Resumido -->
+    <section class="sobre-preview">
+        <h2>Quem é o Desbravador de Fronteiras?</h2>
+        <p>
+            Sou Elias Bandeira — psicólogo (UFAM), pedagogo (UEA), mestre em Ciências Humanas (UEA) e comunicador com 15 anos de experiência.
+            Vivi entre comunidades ribeirinhas, seringais amazônicos, povos indígenas e, por cinco anos, no continente africano,
+            onde dirigi um centro de formação para jovens moçambicanos.
+        </p>
+        <p>
+            Minha missão: transformar histórias reais em ferramentas para despertar líderes,
+            potencializar equipes e abrir caminhos onde antes só existiam limites.
+        </p>
+        <a href="sobre.html" class="link">Ler história completa →</a>
+    </section>
 
-  <div class="grid-2">
-    <div class="card">
-      <h3>Comunicação — TV & Rádio</h3>
-      <p>Produção, apresentação e reportagens no interior do Amazonas. Portfólio com vídeos e entrevistas.</p>
-      <a class="btn" href="comunicacao.html">Ver portfólio</a>
-    </div>
+    <!-- Vídeo incorporado -->
+    <section class="video-section">
+        <h2>Vídeo Destaque</h2>
+        <div class="video-container">
+            <!-- Você depois substitui o link do vídeo -->
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/ScMzIvxBSi4"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Mente em Cena — Curso</h3>
-      <p>Curso prático para quem quer comunicar com presença diante da câmera e do público.</p>
-      <a class="btn" href="cursos.html">Ver curso</a>
-    </div>
-  </div>
-</section>
+    <!-- Prévia da Galeria -->
+    <section class="galeria-preview">
+        <h2>Na Estrada: Amazônia, África e Além</h2>
+        <div class="grid-galeria">
+            <a href="galeria.html"><img src="imagens/foto1.jpg" alt="Foto 1"></a>
+            <a href="galeria.html"><img src="imagens/foto2.jpg" alt="Foto 2"></a>
+            <a href="galeria.html"><img src="imagens/foto3.jpg" alt="Foto 3"></a>
+        </div>
+        <a href="galeria.html" class="link">Ver galeria completa →</a>
+    </section>
 
-<section class="container">
-  <h2 class="section-title">Vídeos & Trechos</h2>
-  <p class="section-desc">Seleção de clipes das viagens e trechos de palestras.</p>
+    <!-- Redes Sociais -->
+    <section class="redes">
+        <h2>Conecte-se</h2>
+        <div class="social-icons">
+            <a href="#" class="icon instagram">Instagram</a>
+            <a href="#" class="icon youtube">YouTube</a>
+            <a href="#" class="icon linkedin">LinkedIn</a>
+            <a href="#" class="icon whatsapp">WhatsApp</a>
+        </div>
+    </section>
 
-  <div class="video-grid">
-    <div class="video-thumb"><img src="img/thumb1.jpg" alt=""></div>
-    <div class="video-thumb"><img src="img/thumb2.jpg" alt=""></div>
-    <div class="video-thumb"><img src="img/thumb3.jpg" alt=""></div>
-  </div>
-</section>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>© 2025 Desbravador de Fronteiras — Elias Bandeira</p>
+    </footer>
 
-<footer>
-  <div class="container">
-    <p class="small">© <span id="year"></span> Elias Bandeira — Desbravador de Fronteiras</p>
-  </div>
-</footer>
-
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
