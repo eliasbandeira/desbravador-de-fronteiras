@@ -1,1 +1,0 @@
-# desbravador-de-fronteiras
