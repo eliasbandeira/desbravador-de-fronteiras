@@ -1,27 +1,27 @@
-# Desbravador de Fronteiras — Site
+# Desbravador de Fronteiras — Instruções de publicação
 
-Estrutura:
+## Arquivos incluídos
 - index.html
 - sobre.html
 - palestras.html
-- cursos.html
 - mentoria.html
-- galeria.html
 - contato.html
-- css/style.css
-- js/gallery.js
-- img/ (coloque suas imagens)
-- videos/ (coloque seus vídeos .mp4 locais)
+- style.css
+- pasta img/ (coloque suas imagens)
+- pasta video/ (coloque seus vídeos)
+- pasta cursos/ com arquivos de cursos
 
-Como testar localmente:
-1. Salve a pasta `desbravador-site` no seu computador.
-2. Abra `index.html` com duplo-clique no navegador.
-3. Teste galeria, lightbox e navegação.
+## Como abrir localmente
+- Salve todos os arquivos em uma mesma pasta.
+- Clique duas vezes em index.html para abrir no navegador.
 
-Como publicar no GitHub Pages (GUI):
-1. Faça login em github.com e abra seu repositório `desbravador-de-fronteiras`.
-2. Clique em "Add file" → "Upload files".
-3. Arraste todos os arquivos e pastas (exceto .DS_Store).
-4. Commit changes.
-5. Vá em Settings → Pages → Build and deployment → Source → Branch: main / Folder: / (root). Salve.
-6. Aguarde alguns minutos e acesse: https://SEU_USUARIO.github.io/desbravador-de-fronteiras/
+## Como publicar no GitHub Pages (GUI)
+1. Crie uma conta no GitHub (se não tiver).
+2. Crie um repositório novo (ex.: desbravador-de-fronteiras).
+3. Faça upload dos arquivos via "Add file" → "Upload files" (arraste a pasta).
+4. Vá em Settings → Pages → Source → selecione "main" branch e / (root) e salve.
+5. Em alguns minutos o site estará em: `https://<seu-usuario>.github.io/<nome-do-repo>/`
+
+## Observações
+- Substitua `contato@desbravadordefronteiras.com` pelo seu e-mail real.
+- Para formulários, configure o endpoint de Formspree ou use um link do WhatsApp/Calendly.

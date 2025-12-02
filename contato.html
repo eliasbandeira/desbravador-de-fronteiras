@@ -2,59 +2,54 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Contato — Desbravador de Fronteiras</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Contato — Desbravador de Fronteiras</title>
+  <meta name="description" content="Formas de contato com Elias Bandeira para palestras, mentoria e cursos.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <div>
-        <h1 class="brand">Desbravador de Fronteiras</h1>
-        <div class="tagline">Elias Bandeira — comunicação que atravessa fronteiras</div>
-      </div>
+    <div class="container header-inner">
+      <h1 class="brand">Desbravador de Fronteiras</h1>
       <nav class="main-nav">
         <a href="index.html">Início</a>
         <a href="sobre.html">Sobre</a>
-        <a href="cursos.html">Cursos</a>
         <a href="palestras.html">Palestras</a>
         <a href="mentoria.html">Mentoria</a>
-        <a href="galeria.html">Galeria</a>
+        <a href="cursos/index.html">Cursos</a>
         <a href="contato.html" class="cta">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2 class="section-title">Contato</h2>
+  <main class="container content">
+    <h2>Contato</h2>
+    <p>Para solicitar proposta, orçamentos ou agendar uma conversa, preencha o formulário abaixo ou utilize os contatos diretos.</p>
 
-    <div class="card">
-      <p>Preencha o formulário ou use os contatos diretos.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form card">
+      <label>Nome
+        <input type="text" name="name" required>
+      </label>
+      <label>E-mail
+        <input type="email" name="email" required>
+      </label>
+      <label>Assunto
+        <input type="text" name="subject">
+      </label>
+      <label>Mensagem
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <button type="submit" class="btn">Enviar mensagem</button>
+    </form>
 
-      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" style="margin-top:12px">
-        <label>Nome
-          <input type="text" name="name" required>
-        </label>
-        <label>E-mail
-          <input type="email" name="email" required>
-        </label>
-        <label>Assunto
-          <input type="text" name="subject">
-        </label>
-        <label>Mensagem
-          <textarea name="message" rows="6" required></textarea>
-        </label>
-        <button type="submit" class="btn">Enviar mensagem</button>
-      </form>
-
-      <div style="margin-top:12px" class="small">
-        <p><strong>Email:</strong> contato@desbravadordefronteiras.com</p>
-        <p><strong>WhatsApp:</strong> +55 92 9xxxx-xxxx (substitua pelo seu número)</p>
-      </div>
+    <div class="card" style="margin-top:16px">
+      <p><strong>Email:</strong> contato@desbravadordefronteiras.com (substitua pelo seu e-mail real)</p>
+      <p><strong>WhatsApp:</strong> adicione seu número no formato +55 92 9xxxx-xxxx</p>
+      <p><strong>Agendamento:</strong> é possível integrar Calendly ou similares — me peça que eu explique como.</p>
     </div>
   </main>
 
   <footer class="site-footer"><div class="container">&copy; <span id="yr5"></span> Desbravador de Fronteiras — Elias Bandeira</div></footer>
-<script>document.getElementById('yr5').textContent = new Date().getFullYear();</script>
+  <script>document.getElementById('yr5').textContent = new Date().getFullYear();</script>
 </body>
 </html>
