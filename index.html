@@ -1,92 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Desbravador de Fronteiras — Elias Bandeira</title>
-  <meta name="description" content="Elias Bandeira — psicólogo, pedagogo e comunicador. Palestras, mentoria e cursos sobre liderança, comunicação e fronteiras humanas.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Desbravador de Fronteiras — Elias Bandeira</title>
+
+<style>
+/* ======== ESTILO PRINCIPAL (igual à prévia) ======== */
+:root {
+  --accent: #0b5cff;
+  --dark-blue: #07203a;
+  --mid-blue: #0b3b66;
+  --bg: #f5f7fa;
+  --text: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  background: var(--dark-blue);
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* MENU */
+nav {
+  background: var(--mid-blue);
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 18px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 14px 26px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-top: 22px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #0845c0;
+}
+
+/* SEÇÕES */
+section {
+  width: 90%;
+  max-width: 950px;
+  margin: 60px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+section h2 {
+  margin-top: 0;
+  color: var(--mid-blue);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--dark-blue);
+  color: white;
+  margin-top: 45px;
+}
+</style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand-wrap">
-        <h1 class="brand">Desbravador de Fronteiras</h1>
-        <p class="tagline">Elias Bandeira — comunicação que atravessa fronteiras</p>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="palestras.html">Palestras</a>
-        <a href="mentoria.html">Mentoria</a>
-        <a href="cursos/index.html">Cursos</a>
-        <a href="contato.html" class="cta">Contato</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Explorando fronteiras humanas, culturais e psíquicas</h2>
-        <p class="lead">Sou <strong>Elias Bandeira</strong>. Psicólogo, pedagogo e comunicador — 15 anos em rádio e TV, 6 anos vivendo e trabalhando no interior do Amazonas e 5 anos liderando projetos de formação em Moçambique. Transformo histórias e vivências em programas de liderança, comunicação e transformação organizacional.</p>
-        <p class="hero-cta">
-          <a href="palestras.html" class="btn">Conheça as palestras</a>
-          <a href="mentoria.html" class="btn ghost">Peça uma proposta</a>
-        </p>
-      </div>
-    </section>
+<header>Desbravador de Fronteiras — Elias Bandeira</header>
 
-    <section class="highlights">
-      <div class="container grid">
-        <article class="card">
-          <h3>Experiência Transcultural</h3>
-          <p>Vivências diretas em seringais, comunidades ribeirinhas e aldeias indígenas do Amazonas, e cinco anos dirigindo um centro de formação em Moçambique — interações que moldaram uma visão única sobre liderança e cultura.</p>
-        </article>
-        <article class="card">
-          <h3>Comunicação Profissional</h3>
-          <p>Quinze anos na comunicação audiovisual: produtor, apresentador e repórter. Material de vídeo e imagem já testado em estúdio e em campo, pronto para eventos e formações.</p>
-        </article>
-        <article class="card">
-          <h3>Formação Acadêmica</h3>
-          <p>Psicologia (UFAM), Pedagogia (UEA) e Mestrado em Ciências Humanas (UEA) — teoria e prática integradas para resultados aplicáveis.</p>
-        </article>
-      </div>
-    </section>
+<nav>
+  <a href="index.html">Sobre</a>
+  <a href="cursos.html">Cursos</a>
+  <a href="palestras.html">Palestras</a>
+  <a href="mentoria.html">Mentoria</a>
+  <a href="contato.html">Contato</a>
+</nav>
 
-    <section class="media-preview">
-      <div class="container">
-        <h3>Multimídia de campo</h3>
-        <p>Trechos de entrevistas, reportagens e oficinas documentadas por vídeo — conteúdo valioso para eventos e formações que buscam inspiração real e aplicável.</p>
-        <div class="media-row">
-          <div class="media-item">
-            <img src="img/placeholder-1.jpg" alt="Entrevista no interior">
-            <p>Entrevistas e histórias do interior amazônico</p>
-          </div>
-          <div class="media-item">
-            <img src="img/placeholder-2.jpg" alt="Formação em Moçambique">
-            <p>Formação de jovens em Moçambique</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="hero">
+  <h1>Explorando fronteiras humanas, culturais e psíquicas</h1>
+  <p>
+    Sou <strong>Elias Bandeira</strong>: psicólogo, pedagogo e comunicador.  
+    Transformo experiências em cursos, mentorias e palestras que inspiram líderes, equipes e instituições.  
+    Vivências no Amazonas e em Moçambique moldaram minha abordagem única.
+  </p>
+  <a class="btn" href="contato.html">Solicitar proposta</a>
+</div>
 
-    <section class="cta-area">
-      <div class="container">
-        <h3>Quer inspirar sua equipe com uma história de fronteira?</h3>
-        <p>Solicite uma proposta personalizada para palestras, treinamentos ou mentorias. Programas sob medida para empresas, organizações religiosas e instituições públicas.</p>
-        <p><a href="contato.html" class="btn">Solicitar proposta</a></p>
-      </div>
-    </section>
-  </main>
+<section id="sobre">
+  <h2>Sobre</h2>
+  <p>
+    Conteúdo da seção “Sobre” (você já tem este texto – pode colar هنا quando quiser).
+  </p>
+</section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Desbravador de Fronteiras — Elias Bandeira</p>
-      <p class="small"><a href="README.md">Como publicar</a></p>
-    </div>
-  </footer>
+<section id="palestras">
+  <h2>Palestras</h2>
+  <p>Conteúdo da seção Palestras...</p>
+</section>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<section id="mentoria">
+  <h2>Mentoria</h2>
+  <p>Conteúdo da seção Mentoria...</p>
+</section>
+
+<footer>
